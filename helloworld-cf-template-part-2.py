@@ -53,7 +53,7 @@ ud = Base64(Join('\n', [
     "sudo wget http://bit.ly/2vESNuc -O /home/ec2-user/helloworld.js",
     "sudo mkdir /etc/init",
     "sudo wget http://bit.ly/2vVvT18 -O /etc/init/helloworld.conf",
-    "sudo /usr/bin/node /home/ec2-user/helloworld.hs &"
+    "sudo /usr/bin/node /home/ec2-user/helloworld.js &"
 ]))
 
 t.add_resource(ec2.Instance(

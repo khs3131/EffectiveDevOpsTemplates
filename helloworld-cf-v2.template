@@ -43,13 +43,13 @@
                 "GroupDescription": "Allow SSH and TCP/3000 access",
                 "SecurityGroupIngress": [
                     {
-                        "CidrIp": "182.224.185.175/32",
+                        "CidrIp": "15.165.73.85/32",
                         "FromPort": "22",
                         "IpProtocol": "tcp",
                         "ToPort": "22"
                     },
                     {
-                        "CidrIp": "182.224.185.175/32",
+                        "CidrIp": "15.165.73.85/32",
                         "FromPort": "3000",
                         "IpProtocol": "tcp",
                         "ToPort": "3000"
@@ -81,7 +81,7 @@
                                 "sudo wget http://bit.ly/2vESNuc -O /home/ec2-user/helloworld.js",
                                 "sudo mkdir /etc/init",
                                 "sudo wget http://bit.ly/2vVvT18 -O /etc/init/helloworld.conf",
-                                "sudo /usr/bin/node /home/ec2-user/helloworld.hs &"
+                                "sudo /usr/bin/node /home/ec2-user/helloworld.js &"
                             ]
                         ]
                     }
